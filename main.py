@@ -32,7 +32,7 @@ def load_data():
 
 df = load_data()
 
-Options = ["None", "Spam", "Not Spam"]
+Options = ["View All", "Spam", "Not Spam"]
 select = st.selectbox("Select Spam or Not Spam", Options)
 if select == "Spam":
     df_spam = df[df['label'] == 'spam']
@@ -42,7 +42,7 @@ elif select == "Not Spam":
     df_notspam = df[df['label'] == 'not_spam']
     st.dataframe(df_notspam.head(nrows), use_container_width=True)
 
-elif select == "None":    
+elif select == "View All":    
     st.dataframe(df.head(nrows), use_container_width=True)
 
 st.write("Unmasking the deceptive, revealing the genuine. Analyzing spam, one message at a time. - Siddharth Choudhury")
