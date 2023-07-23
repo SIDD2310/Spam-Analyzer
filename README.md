@@ -6,9 +6,9 @@ This is a web application built using Streamlit, a Python library for creating i
 
 ## Getting Started
 To run this application, you'll need to have the required dependencies installed. Make sure you have the following libraries installed in your Python environment:
-- Streamlit
-- Huggingface_hub
-- Pandas
+- [Streamlit](https://streamlit.io/)
+- [Huggingface_hub](https://huggingface.co/)
+- [Pandas](https://pandas.pydata.org/)
 
 ## How to Run
 1. Save the code in a Python file, for example, `spam_analyzing_app.py`.
